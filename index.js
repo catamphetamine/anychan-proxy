@@ -1,3 +1,4 @@
+// var corsProxy = require('../cors-proxy-node')
 var corsProxy = require('cors-proxy-node')
 
 corsProxy({
@@ -16,6 +17,11 @@ corsProxy({
     "https://anychans.github.io",
     "https://catamphetamine.github.io",
     "https://captchan.surge.sh",
-    "http://localhost:1234"
+    "http://localhost:1234",
+    // When proxying an `<iframe/>`, the Proxy domain itself should be added to `fromOriginWhitelist`.
+    // The reason is that when loading an `<iframe/>`, web browser will set `Origin` HTTP request header
+    // to the "origin" part of the URL specified in the `src` attribute of the `<iframe/>`
+    // which is a proxied URL so the domain of it will be the Proxy domain.
+    "https://anychan-proxy.vercel.app"
   ]
 })
