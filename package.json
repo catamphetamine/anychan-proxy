@@ -23,7 +23,7 @@
   ],
   "homepage": "https://gitlab.com/catamphetamine/anychan-proxy#readme",
   "dependencies": {
-    "cors-proxy-node": "^0.2.2"
+    "cors-proxy-node": "^0.2.3"
   },
   "engines": {
     "node": ">=18.x"

@@ -22,6 +22,8 @@ corsProxy({
     // The reason is that when loading an `<iframe/>`, web browser will set `Origin` HTTP request header
     // to the "origin" part of the URL specified in the `src` attribute of the `<iframe/>`
     // which is a proxied URL so the domain of it will be the Proxy domain.
-    "https://anychan-proxy.vercel.app"
+    "https://anychan-proxy.vercel.app",
+    // Testing `<iframe/>` `transforms` on local proxy:
+    "http://localhost:8080"
   ]
 })
