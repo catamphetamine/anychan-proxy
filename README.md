@@ -7,6 +7,7 @@ It runs on [`cors-proxy-node`](https://gitlab.com/catamphetamine/cors-proxy-node
 ## Use
 
 ```
+npm install
 npm start
 ```
 
